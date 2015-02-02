@@ -36,10 +36,18 @@
 
 3. start deploy your codes----EB
 
+目前还有两个问题未解决
+1. 如何config 整个project,
+2. 用mysql instead of sqlite3
 
 
+最后的希望≤http://blog.karumi.com/post/90652086501/how-to-remotely-debug-django-apps-hosted-in-ec2
 
 
+http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_django.html
+
+
+http://blog.manbolo.com/2013/05/02/build-and-deploy-a-django-project-on-osx-from-scratch
 
 
 http://awsdocs.s3.amazonaws.com/gettingstarted/latest/awsgsg-intro-zh_cn.pdf
@@ -47,3 +55,36 @@ http://awsdocs.s3.amazonaws.com/gettingstarted/latest/awsgsg-intro-zh_cn.pdf
 
 Someother helpful url
 http://feilong.me/wp-content/uploads/2010/12/Amazon-AWS-introduction-by-James-Zhang.pdf
+
+
+Delete all application versions.
+
+Open the AWS Elastic Beanstalk console at https://console.aws.amazon.com/elasticbeanstalk/.
+
+From the AWS Elastic Beanstalk applications page, click DEFAULT-ENVIRONMENT in the My First Elastic Beanstalk Application application.
+
+Click Upload and Deploy.
+
+When prompted for an application, click All Versions.
+
+Select all application versions that you want to delete, and then click Delete.
+
+Confirm the versions that you are deleting, and then click Delete.
+
+Click Done.
+
+Terminate the environment.
+
+Go back to the environment dashboard by clicking My First Elastic Beanstalk Application and then Default-Environment.
+
+Click Actions and then click Terminate Environment.
+
+Confirm that you are terminating Default-Environment and then click Terminate.
+
+Delete the My First Elastic Beanstalk Application AWS Elastic Beanstalk application.
+
+Click Elastic Beanstalk at the upper left to return to the main dashboard.
+
+From the AWS Elastic Beanstalk applications page, click Actions for the My First Elastic Beanstalk Application application and then click Delete Application.
+
+Confirm that you want to delete this AWS Elastic Beanstalk application by clicking Delete.
